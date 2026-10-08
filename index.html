@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALPER | Excelencia Arquitectónica</title>
+    <!-- Google Fonts: Montserrat para títulos, Inter para cuerpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">CIMBRA<span>CALPER</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#cotizacion" class="btn-nav">Cotizar</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Imagen de stock profesional cargada desde Unsplash -->
+        <div class="hero-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container fade-in">
+            <h1>Visión, solidez<br>y diseño estructural</h1>
+            <p>Ejecución impecable en proyectos comerciales, residenciales y de obra civil con los más altos estándares
+                de calidad internacional.</p>
+            <a href="#cotizacion" class="btn-primary">Iniciar Proyecto</a>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="galeria" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Galería de Ejecución</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Precisión técnica en cada etapa del proceso constructivo.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+                        alt="Construcción Comercial">
+                    <div class="gallery-hover"><span>Estructuras</span></div>
+                </div>
+                <div class="gallery-item fade-in" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
+                        alt="Arquitectura Moderna">
+                    <div class="gallery-hover"><span>Comercial</span></div>
+                </div>
+                <div class="gallery-item fade-in" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+                        alt="Ingeniería Civil">
+                    <div class="gallery-hover"><span>Obra Civil</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Destacado -->
+    <section id="portafolio" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Portafolio Selecto</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Obras que redefinen el entorno urbano.</p>
+            </div>
+            <div class="portfolio-grid">
+                <article class="portfolio-card fade-in">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                            alt="Oficinas Corporativas">
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="category">Corporativo</span>
+                        <h3>Edificio Nexus</h3>
+                        <p>Desarrollo de oficinas grado A+ de 15 niveles, integrando diseño sustentable y automatización
+                            inteligente.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card fade-in" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80"
+                            alt="Complejo Residencial">
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="category">Residencial</span>
+                        <h3>Reserva del Bosque</h3>
+                        <p>Complejo habitacional de lujo con enfoque minimalista, respetando la topografía natural del
+                            entorno.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="section bg-dark text-white">
+        <div class="container quote-container">
+            <div class="quote-text fade-in">
+                <h2 class="section-title text-left">Hablemos de tu obra</h2>
+                <div class="divider align-left"></div>
+                <p>Nuestros ingenieros y arquitectos están listos para analizar tus requerimientos y presentar una
+                    propuesta técnica y económica detallada.</p>
+                <div class="contact-info-direct">
+                    <p><strong>T.</strong> +52 55 1234 5678</p>
+                    <p><strong>E.</strong> proyectos@constructpro.com</p>
+                </div>
+            </div>
+            <div class="quote-form-wrapper fade-in" style="transition-delay: 0.1s;">
+                <form id="quote-form" class="quote-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Nombre o Empresa</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Correo Electrónico</label>
+                    </div>
+                    <div class="input-group">
+                        <select id="service" required>
+                            <option value="" disabled selected>Selecciona una especialidad</option>
+                            <option value="residencial">Construcción Residencial</option>
+                            <option value="comercial">Construcción Comercial</option>
+                            <option value="remodelacion">Intervención y Remodelación</option>
+                            <option value="civil">Infraestructura y Obra Civil</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="3" required placeholder=" "></textarea>
+                        <label for="message">Alcance del proyecto (m², ubicación, etc.)</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Solicitar Propuesta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand fade-in">
+                <h3>CONSTRUCT<span>PRO</span></h3>
+                <p>Ingeniería y arquitectura de precisión.<br>Construyendo confianza desde 2010.</p>
+            </div>
+            <div class="footer-links fade-in" style="transition-delay: 0.1s;">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#inicio">Nuestra Firma</a></li>
+                    <li><a href="#portafolio">Proyectos</a></li>
+                    <li><a href="#">Bolsa de Trabajo</a></li>
+                </ul>
+            </div>
+            <div class="footer-links fade-in" style="transition-delay: 0.2s;">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ConstructPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
